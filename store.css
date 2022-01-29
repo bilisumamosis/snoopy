@@ -1,0 +1,65 @@
+body {
+    background-color: white;
+}
+
+.merch-navigation {
+    padding: 0.5rem;
+    
+    background-color: grey;
+    
+    display: flex;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    
+}
+
+.merch-type {
+    color: white;
+    background-color: grey;
+    
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+
+.merch-type:hover {
+    cursor: pointer;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.merch-grid-item {
+    width: 15rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    background-color: white;
+}
+
+
+
+
+.invisible {
+    display: none !important;
+}
+
+.visible {
+    display: grid !important;
+}
+
+
+.selected {
+    background-color: red !important;
+}
+
+.not-selected {
+    background-color: grey !important;
+}

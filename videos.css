@@ -1,0 +1,47 @@
+body {
+    background-color: grey;
+}
+
+
+
+
+.videos-grid {
+    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    
+    justify-content: space-evenly;
+    grid-gap: 0.5rem;
+    
+    padding: 1rem;
+}
+
+.grid-video {
+    background-color: rgba(44, 44, 44, 0.452);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.grid-video-title {
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin: 0;
+    
+    padding: 0.5rem;
+}
+
+.grid-video video {
+    width: 100%;
+}
+
+@media (max-width: 40rem) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
+}
